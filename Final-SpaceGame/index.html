@@ -1,0 +1,97 @@
+<!-- Code made by Akshay Radhakrishnan, Olivia Wong and Josue Uriarte--> 
+<!-- Graphics by Jimmy Lujan Ideas -->
+
+<!DOCTYPE html>
+
+<html lang="aa">
+<head>
+    <link rel="icon" href="https://i.embed.ly/1/display/resize?key=1e6a1a1efdb011df84894040444cdc60&url=http%3A%2F%2Fwww.google.com%2Fs2%2Ffavicons%3Fdomain%3Dhttp%3A%2F%2Fopen.nasa.gov" />
+    <title>Spaceship Game</title>
+
+    <style>
+        html, body {
+            overflow: hidden;
+        }
+        img {
+            display: none !important;
+        }
+
+        h6{
+        	color:#fff;
+        }
+        #enemyImage {
+            width: 100px;
+            height: 100px;
+        }
+        @font-face {
+            font-family: pixel;
+            src: url(upheavtt.ttf);
+        }
+        #button {
+            background:    #3d85c6;
+            background:    linear-gradient(#3d85c6, #073763);
+            border-radius: 5px;
+            color:         #fff;
+            display:       inline-block;
+            padding:       9px 21px;
+            font:          normal 700 23px/1 "Open Sans", sans-serif;
+            text-align:    center;
+            text-shadow:   1px 1px 0 #000;
+            margin-top: 20%;        
+        }
+
+         #button2 {
+            background:    #3d85c6;
+            background:    linear-gradient(#3d85c6, #073763);
+            border-radius: 5px;
+            color:         #fff;
+            display:       inline-block;
+            padding:       9px 21px;
+            font:          normal 700 23px/1 "Open Sans", sans-serif;
+            text-align:    center;
+            text-shadow:   1px 1px 0 #000;
+            margin-top: 20%;        
+        }
+        
+        #gameScreen {
+            z-index: -1;
+        }
+        #wrapper {
+            text-align: center;
+            z-index: 1;            
+        }
+        
+        p {
+            font-family: Arial;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <button id="button" name="mode1" onClick ="beginGame()">Single Player</button>
+        <button id="button2" name="mode2" onClick ="beginGame2()">Multiplayer</button>
+        <br>
+        <br>
+        <b style="color: white;font-family:Arial;">Instructions</b>
+        <p>Single Player: Use the arrow keys to move and spacebar to shoot</p>
+        <p>Multiplayer: First player are the same controls. Second player uses WASD keys and V to shoot.</p>
+        <br>
+        <p>You have 3 lives. Getting hit by an asteroid or an enemy missile will cost you 1 life.</p>
+        <p>Every shot to the enemy spaceship increases your score by 1 and takes </p>
+        <p>some health from the enemy spaceship. As your score gets higher, more asteroids start to fall.</p>
+    </div>
+    <img id="enemyImage" src="SpaceShip.png" />
+    <img id="buddyShip" src="SpaceShip2.png" />
+    <img id="asteroid" src="Asteroid.png" />
+    <img id="terror" src="Enemy.gif" />
+    <img id="health1" src="http://pixelartmaker.com/art/66cd9b092be1c70.png"/>
+    <img id="health2" src="http://pixelartmaker.com/art/66cd9b092be1c70.png"/>
+    <img id="health3" src="http://pixelartmaker.com/art/66cd9b092be1c70.png"/>
+    <canvas id="gameScreen">Your game won't work rip.</canvas>
+
+</body>
+<script src="spacegame.js"></script>
+
+</html>
